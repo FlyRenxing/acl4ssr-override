@@ -1,0 +1,33 @@
+name: catalog check
+
+on:
+  schedule:
+    # Weekly Monday 10:00 UTC
+    - cron: '0 10 * * 1'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'config/acl4ssr-catalog.yaml'
+      - 'scripts/catalog-check.mjs'
+      - '.github/workflows/catalog-check.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check ACL4SSR catalog vs upstream
+        run: npm run catalog:check

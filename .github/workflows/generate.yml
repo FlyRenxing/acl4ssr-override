@@ -1,0 +1,68 @@
+name: generate overrides
+
+on:
+  schedule:
+    # Daily 16:00 UTC — refresh from upstream ACL4SSR INI
+    - cron: '0 16 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'config/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/generate.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: generate-overrides
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Needed so the bot can push a follow-up commit
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Test
+        run: npm test
+
+      - name: Generate all profiles
+        run: npm run generate -- --strict --concurrency 4
+
+      - name: Commit and push output
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add output/
+          if git diff --cached --quiet; then
+            echo "No output changes"
+            exit 0
+          fi
+
+          git commit -m "chore: regenerate overrides from upstream INI [skip ci]"
+          # Retry push once (schedule races are rare with concurrency group)
+          git push origin "HEAD:${GITHUB_REF_NAME}" || {
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          }

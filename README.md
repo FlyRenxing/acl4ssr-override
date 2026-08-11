@@ -113,8 +113,25 @@ fetch INI → parseIni (通用 subconverter) → adapt (无业务组名硬编码
 
 ## CI
 
-- `generate.yml`：每天定时 + 配置变更时生成并提交 `output/`  
-- `catalog-check.yml`：每周检查官方 config 目录是否有新 ini  
+| Workflow | 触发 | 作用 |
+|----------|------|------|
+| `generate overrides` | 每天 16:00 UTC、改 `config/`/`scripts/`、手动 | `npm test` + 全量 generate，有变更则提交 `output/` |
+| `catalog check` | 每周一、改 catalog、手动 | 对比官方是否新增 ini |
+
+首次启用 workflow 文件需要本机 `gh` 带 `workflow` scope（一次性）：
+
+```bash
+gh auth refresh -h github.com -s workflow
+cd ~/repos/acl4ssr-override && git push origin main
+```
+
+推送后可在 Actions 页手动 **Run workflow** 验证。
+
+Stash raw 示例（已在 main）：
+
+```text
+https://raw.githubusercontent.com/FlyRenxing/acl4ssr-override/main/output/online_full/stash/override.stoverride
+```
 
 ---
 
