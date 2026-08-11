@@ -227,6 +227,8 @@ export function adapt(ast, options, meta = {}) {
       source: 'subconverter-ini',
     },
     excludeRemarks,
+    sortProxies: options.sort_proxies !== false,
+    sortProxiesLocale: options.sort_proxies_locale || 'zh-CN',
     dns: options.dns ?? null,
     hosts: options.hosts ?? null,
     general: options.general ?? null,

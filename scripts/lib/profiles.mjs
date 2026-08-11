@@ -57,6 +57,9 @@ export function resolveProfileOptions(defaults, profile) {
     targets: profile.targets || defaults.targets || ['stash', 'party'],
     adapt: { ...(defaults.adapt || {}), ...(profile.adapt || {}) },
     exclude_remarks: profile.exclude_remarks ?? defaults.exclude_remarks ?? '',
+    sort_proxies: profile.sort_proxies ?? defaults.sort_proxies ?? true,
+    sort_proxies_locale:
+      profile.sort_proxies_locale ?? defaults.sort_proxies_locale ?? 'zh-CN',
     provider_interval: profile.provider_interval ?? defaults.provider_interval ?? 86400,
     ruleset_path_prefix: profile.ruleset_path_prefix || defaults.ruleset_path_prefix || './ruleset/acl4ssr',
     dns: profile.dns !== undefined ? profile.dns : defaults.dns,

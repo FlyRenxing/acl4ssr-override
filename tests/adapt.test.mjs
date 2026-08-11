@@ -132,4 +132,16 @@ describe('emit', () => {
     assert.match(out, /function main\(config\)/);
     assert.match(out, /proxy-groups/);
   });
+
+  it('party sorts proxies by name when enabled', () => {
+    const text = fs.readFileSync(path.join(fixtures, 'ACL4SSR_Online_Mini.ini'), 'utf8');
+    const ir = adapt(
+      parseIni(text),
+      { ...defaultOpts, sort_proxies: true, sort_proxies_locale: 'zh-CN' },
+      { profileId: 'online_mini', iniUrl: 'http://x', sha256: 's' }
+    );
+    const out = emitParty(ir);
+    assert.match(out, /localeCompare/);
+    assert.match(out, /sortLocale/);
+  });
 });

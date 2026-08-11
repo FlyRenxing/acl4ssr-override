@@ -17,6 +17,10 @@ export function emitStash(ir) {
       .replace(/\{id\}/g, id)
       .replace(/\{ini_url\}/g, iniUrl);
 
+  const sortNote = ir.sortProxies
+    ? `# Nodes: Stash keeps subscription order inside groups (override cannot re-sort proxies). Use Sub-Store to sort by name, or Network Settings → sort by latency.`
+    : `# sort_proxies disabled`;
+
   const header = [
     `name: ${yamlScalar(name)}`,
     `desc: ${yamlScalar(desc)}`,
@@ -26,6 +30,7 @@ export function emitStash(ir) {
     `# sha256: ${ir.meta?.sha256 || ''}`,
     `# at: ${ir.meta?.generatedAt || ''}`,
     `# Stash arrays default to prepend; #!replace overwrites like overwrite_original_rules=true.`,
+    sortNote,
     '',
   ].join('\n');
 

@@ -16,6 +16,9 @@ defaults:
     geoip_no_resolve: true
     final_as_match: true
   exclude_remarks: '(?i)(流量|官网|网址|官址|机场|套餐|应急|时间|重置|剩余|[到过]期|订阅|失联|expire|traffic|premium|GB)'
+  # Sort proxy nodes by name (Party JS always can; Stash follows subscription order unless sorted upstream)
+  sort_proxies: true
+  sort_proxies_locale: zh-CN
   provider_interval: 86400
   ruleset_path_prefix: ./ruleset/acl4ssr
   # Optional shared DNS for emitted overrides (null / omit to skip DNS section)

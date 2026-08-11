@@ -135,6 +135,23 @@ https://raw.githubusercontent.com/FlyRenxing/acl4ssr-override/main/output/online
 
 ---
 
+## 节点排序
+
+| 客户端 | 行为 |
+|--------|------|
+| **Mihomo Party** | 覆写脚本默认按名称排序（`localeCompare`，`zh-CN` + 数字友好）。可在 `profiles.yaml` 设 `sort_proxies: false` 关闭。 |
+| **Stash** | 策略组内顺序 = **订阅配置文件中的顺序**（官方说明）；覆写无法重排 `proxies`。可在「网络设置」改为按**延迟**排序。若要按**名称**，请在 Sub-Store 等转换环节先排序后再导入 Stash。 |
+
+Sub-Store 按名称排序示例（脚本操作）：
+
+```js
+function operator(proxies) {
+  return proxies.slice().sort((a, b) =>
+    a.name.localeCompare(b.name, 'zh-CN', { numeric: true, sensitivity: 'base' })
+  );
+}
+```
+
 ## 与 Tailscale 私有覆写
 
 本仓可公开。含密钥的 Tailscale 覆写请继续放在私有仓（如 `stash-overrides`），在 Stash 中 **叠在本覆写之后**，且不要对已 `#!replace` 的整段 rules 再 replace 掉（只追加节点/局域网规则即可）。
