@@ -1,0 +1,17 @@
+{
+  "name": "acl4ssr-override",
+  "version": "1.0.0",
+  "description": "Subconverter INI → Stash / Mihomo Party override generator (ACL4SSR multi-profile)",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "test": "node --test tests/adapt.test.mjs tests/catalog.test.mjs tests/parse-ini.test.mjs",
+    "catalog:check": "node scripts/catalog-check.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

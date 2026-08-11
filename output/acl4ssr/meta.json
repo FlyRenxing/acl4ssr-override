@@ -1,0 +1,16 @@
+{
+  "id": "acl4ssr",
+  "name": "ACL4SSR",
+  "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini",
+  "sha256": "03aac3aabb1dbece7e92e09f05af3416f331b11dcef192ba7b77e5f2b1fc8668",
+  "from_cache": true,
+  "generated_at": "2026-08-11T09:33:26.732Z",
+  "group_count": 10,
+  "provider_count": 12,
+  "rules_count": 14,
+  "artifacts": [
+    "stash/override.stoverride",
+    "party/override.js"
+  ],
+  "warnings": []
+}

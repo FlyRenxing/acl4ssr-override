@@ -1,0 +1,569 @@
+{
+  "generated_at": "2026-08-11T09:33:26.797Z",
+  "count": 33,
+  "ok": 33,
+  "failed": 0,
+  "profiles": [
+    {
+      "status": "ok",
+      "id": "acl4ssr",
+      "name": "ACL4SSR",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini",
+      "sha256": "03aac3aabb1dbece7e92e09f05af3416f331b11dcef192ba7b77e5f2b1fc8668",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.732Z",
+      "group_count": 10,
+      "provider_count": 12,
+      "rules_count": 14,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "adblock_plus",
+      "name": "ACL4SSR_AdblockPlus",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_AdblockPlus.ini",
+      "sha256": "4f6838aa272885cc1edd0e9a59ec9c32d5044d5612537496cb7ff028e5f8ee41",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.740Z",
+      "group_count": 11,
+      "provider_count": 15,
+      "rules_count": 17,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "back_cn",
+      "name": "ACL4SSR_BackCN",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_BackCN.ini",
+      "sha256": "beb5c7c31cb55eef4c677da2b393429216e17ae63c21549e1a1ee8a7e7830705",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.743Z",
+      "group_count": 5,
+      "provider_count": 9,
+      "rules_count": 11,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "mini",
+      "name": "ACL4SSR_Mini",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini.ini",
+      "sha256": "9c5f99e83ccb30aefec00f0a8af3173bb3168920f2f045e70dabbbc7e6dc9610",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.744Z",
+      "group_count": 5,
+      "provider_count": 10,
+      "rules_count": 12,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "mini_fallback",
+      "name": "ACL4SSR_Mini_Fallback",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_Fallback.ini",
+      "sha256": "1894e8c5eeac9eaf52c3e76b7889666500b829ccc21e7f0eaf4f004cf78b050b",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.746Z",
+      "group_count": 6,
+      "provider_count": 10,
+      "rules_count": 12,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "mini_multi_mode",
+      "name": "ACL4SSR_Mini_MultiMode",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_MultiMode.ini",
+      "sha256": "403bc1e9674467d823b77c0383cdc69c34ab1153a69f7f17bafe97e62b153480",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.748Z",
+      "group_count": 7,
+      "provider_count": 10,
+      "rules_count": 12,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "mini_no_auto",
+      "name": "ACL4SSR_Mini_NoAuto",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_NoAuto.ini",
+      "sha256": "7d245bdf4c8c024979d232797dbafed5ce165bfeda3c75a33a4b9a5780987d5a",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.750Z",
+      "group_count": 4,
+      "provider_count": 10,
+      "rules_count": 12,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "no_apple",
+      "name": "ACL4SSR_NoApple",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoApple.ini",
+      "sha256": "8cd840fd045d8339c77e829d242554a6fe0f2116866b435214f99cffb64bacc3",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.752Z",
+      "group_count": 9,
+      "provider_count": 12,
+      "rules_count": 14,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "no_auto",
+      "name": "ACL4SSR_NoAuto",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto.ini",
+      "sha256": "a41b804042e313a41a7654eea4894f506c297938cb6a915fef104032a9f12afd",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.754Z",
+      "group_count": 9,
+      "provider_count": 12,
+      "rules_count": 14,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "no_auto_no_apple",
+      "name": "ACL4SSR_NoAuto_NoApple",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto_NoApple.ini",
+      "sha256": "acdc14eff0c9ab9fb42ca3bc857d6c799139fa1645dde2baf8460273c6520136",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.755Z",
+      "group_count": 8,
+      "provider_count": 12,
+      "rules_count": 14,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "no_auto_no_apple_no_microsoft",
+      "name": "ACL4SSR_NoAuto_NoApple_NoMicrosoft",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto_NoApple_NoMicrosoft.ini",
+      "sha256": "fecf07a19949c5767bfb1aaa364a6a66098a25ed7c534bbc1ed1e7c4a6a5fe03",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.756Z",
+      "group_count": 7,
+      "provider_count": 11,
+      "rules_count": 13,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "no_microsoft",
+      "name": "ACL4SSR_NoMicrosoft",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoMicrosoft.ini",
+      "sha256": "66664608cb00c4bd474416439b894f00be7cc67f6145ee7bfd40e4dc67c4ad42",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.758Z",
+      "group_count": 9,
+      "provider_count": 11,
+      "rules_count": 13,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online",
+      "name": "ACL4SSR_Online",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini",
+      "sha256": "26f7445cb4e91f9c21b92de5029aca9126e4facca49858763bda4cf2dadb0afb",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.759Z",
+      "group_count": 11,
+      "provider_count": 14,
+      "rules_count": 16,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_adblock_plus",
+      "name": "ACL4SSR_Online_AdblockPlus",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_AdblockPlus.ini",
+      "sha256": "e5f7066a8c91559df5d0c8e16c4ad18bb67c6f8975af1f930737af2747343c65",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.761Z",
+      "group_count": 12,
+      "provider_count": 17,
+      "rules_count": 19,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_full",
+      "name": "ACL4SSR_Online_Full",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini",
+      "sha256": "034bb8a638947a1d282742f9f11ea4fe7c916b6fd72805388cd0cc6e5ccc51a3",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.763Z",
+      "group_count": 29,
+      "provider_count": 31,
+      "rules_count": 33,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_full_adblock_plus",
+      "name": "ACL4SSR_Online_Full_AdblockPlus",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini",
+      "sha256": "7ce2b39f5f844df8d06e6267907ae00a3a9e042283712236890f7ec87338b027",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.766Z",
+      "group_count": 33,
+      "provider_count": 35,
+      "rules_count": 37,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_full_google",
+      "name": "ACL4SSR_Online_Full_Google",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Google.ini",
+      "sha256": "048e80414e422fe3a36cba924994c27d11a219a8301c86e3bc7492acb44aab2a",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.770Z",
+      "group_count": 33,
+      "provider_count": 32,
+      "rules_count": 36,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_full_multi_mode",
+      "name": "ACL4SSR_Online_Full_MultiMode",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini",
+      "sha256": "c9cc1c2000588919cfd63c0d34201a8f52985857f42cc010c56f3f7354d7bb92",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.772Z",
+      "group_count": 31,
+      "provider_count": 31,
+      "rules_count": 33,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_full_netflix",
+      "name": "ACL4SSR_Online_Full_Netflix",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Netflix.ini",
+      "sha256": "5e748dc5998a6319ee62a6cf43ca75c30ea0dab5f162b8593e4dcc516d53766e",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.775Z",
+      "group_count": 31,
+      "provider_count": 32,
+      "rules_count": 34,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_full_no_auto",
+      "name": "ACL4SSR_Online_Full_NoAuto",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
+      "sha256": "2f76f95ccdab42052a3d701da889c4caab032e8169a24c930a02f354580d7c0a",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.777Z",
+      "group_count": 28,
+      "provider_count": 31,
+      "rules_count": 33,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_mini",
+      "name": "ACL4SSR_Online_Mini",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini",
+      "sha256": "6464f77b13f5b3091017e33f7a34c536aef2a95f84ddf5d5bdcf9bd73c58f999",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.779Z",
+      "group_count": 5,
+      "provider_count": 11,
+      "rules_count": 13,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_mini_adblock_plus",
+      "name": "ACL4SSR_Online_Mini_AdblockPlus",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini",
+      "sha256": "ea46d7ccb20fecd9b47fecf766e3d8e7a65a5d0a1a1a4c1535a8472c3e11ed72",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.781Z",
+      "group_count": 5,
+      "provider_count": 12,
+      "rules_count": 14,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_mini_ai",
+      "name": "ACL4SSR_Online_Mini_Ai",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_Ai.ini",
+      "sha256": "263273bbaf183d5d0bdd3dc7c920d86fc2171738b6351fe294cc6bc0d6f64360",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.782Z",
+      "group_count": 6,
+      "provider_count": 13,
+      "rules_count": 15,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_mini_fallback",
+      "name": "ACL4SSR_Online_Mini_Fallback",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_Fallback.ini",
+      "sha256": "e97b3f0b5b95aa3564ad4bb34dfa66be1bf77551a75c845da5419befc73b48d4",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.783Z",
+      "group_count": 6,
+      "provider_count": 11,
+      "rules_count": 13,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_mini_multi_country",
+      "name": "ACL4SSR_Online_Mini_MultiCountry",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiCountry.ini",
+      "sha256": "ff91f5e09996f6bce0df380ec0ca500997f082dfc6a3874b66dc533a8278cf5e",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.785Z",
+      "group_count": 10,
+      "provider_count": 11,
+      "rules_count": 13,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_mini_multi_mode",
+      "name": "ACL4SSR_Online_Mini_MultiMode",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini",
+      "sha256": "dfdaf490879ec96d5b0be64f419dba31de3f0c601e8d3821cc3ce496e5861f1e",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.786Z",
+      "group_count": 7,
+      "provider_count": 11,
+      "rules_count": 13,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_mini_no_auto",
+      "name": "ACL4SSR_Online_Mini_NoAuto",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_NoAuto.ini",
+      "sha256": "ce5f318618030d0cacf8c21967f2393b4b20010820014f0b02d0a0396eae8d34",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.787Z",
+      "group_count": 4,
+      "provider_count": 11,
+      "rules_count": 13,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_multi_country",
+      "name": "ACL4SSR_Online_MultiCountry",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_MultiCountry.ini",
+      "sha256": "dd704ca71a7b94a10eec1e83a1007861d5cc716ff23ca7e632e51f5a35266c09",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.788Z",
+      "group_count": 17,
+      "provider_count": 16,
+      "rules_count": 18,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_no_auto",
+      "name": "ACL4SSR_Online_NoAuto",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini",
+      "sha256": "ca052ea0387305102dd32e3ab523ce789fc0d3ff0cdf6295f2dcca8652c54a7a",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.791Z",
+      "group_count": 10,
+      "provider_count": 14,
+      "rules_count": 16,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "online_no_reject",
+      "name": "ACL4SSR_Online_NoReject",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoReject.ini",
+      "sha256": "1addc8eb286c7975d4806e379337f0a14a04f146b79864b4576a0051155651dd",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.792Z",
+      "group_count": 9,
+      "provider_count": 11,
+      "rules_count": 13,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "with_china_ip",
+      "name": "ACL4SSR_WithChinaIp",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithChinaIp.ini",
+      "sha256": "743e8f95421e21f8e106ed7b58edcfb4a9509c3c4bd3614e4d0f0aad30e4f6ff",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.794Z",
+      "group_count": 10,
+      "provider_count": 13,
+      "rules_count": 14,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "with_china_ip_with_gfw",
+      "name": "ACL4SSR_WithChinaIp_WithGFW",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithChinaIp_WithGFW.ini",
+      "sha256": "22b5ceb3c94e57baa20b51ef51e4ac1c0807e665667827e7fe16d583a46f1e09",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.795Z",
+      "group_count": 10,
+      "provider_count": 13,
+      "rules_count": 15,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    },
+    {
+      "status": "ok",
+      "id": "with_gfw",
+      "name": "ACL4SSR_WithGFW",
+      "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithGFW.ini",
+      "sha256": "421f91809c6d6a63a13797e7ebc05137e12a6c008a65cb581d2523c036850b1b",
+      "from_cache": true,
+      "generated_at": "2026-08-11T09:33:26.796Z",
+      "group_count": 10,
+      "provider_count": 12,
+      "rules_count": 14,
+      "artifacts": [
+        "stash/override.stoverride",
+        "party/override.js"
+      ],
+      "warnings": []
+    }
+  ]
+}

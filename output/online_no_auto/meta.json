@@ -1,0 +1,16 @@
+{
+  "id": "online_no_auto",
+  "name": "ACL4SSR_Online_NoAuto",
+  "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini",
+  "sha256": "ca052ea0387305102dd32e3ab523ce789fc0d3ff0cdf6295f2dcca8652c54a7a",
+  "from_cache": true,
+  "generated_at": "2026-08-11T09:33:26.791Z",
+  "group_count": 10,
+  "provider_count": 14,
+  "rules_count": 16,
+  "artifacts": [
+    "stash/override.stoverride",
+    "party/override.js"
+  ],
+  "warnings": []
+}

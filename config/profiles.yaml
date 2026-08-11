@@ -1,0 +1,64 @@
+# Multi-profile config: subconverter INI → Stash / Party overrides
+# Custom (non-ACL4SSR) example:
+# profiles:
+#   - id: my_fork
+#     name: My Fork
+#     ini_url: https://example.com/custom.ini
+#     enabled: true
+
+defaults:
+  targets:
+    - stash
+    - party
+  adapt:
+    filter_groups_include_all: true
+    inject_exclude_into_include_all: true
+    geoip_no_resolve: true
+    final_as_match: true
+  exclude_remarks: '(?i)(流量|官网|网址|官址|机场|套餐|应急|时间|重置|剩余|[到过]期|订阅|失联|expire|traffic|premium|GB)'
+  provider_interval: 86400
+  ruleset_path_prefix: ./ruleset/acl4ssr
+  # Optional shared DNS for emitted overrides (null / omit to skip DNS section)
+  dns:
+    enable: true
+    ipv6: false
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    fake-ip-filter:
+      - '*.lan'
+      - '*.local'
+      - localhost.ptlogin2.qq.com
+    default-nameserver:
+      - 223.5.5.5
+      - 119.29.29.29
+    nameserver:
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+    fallback:
+      - https://dns.cloudflare.com/dns-query
+      - https://dns.google/dns-query
+    fallback-filter:
+      geoip: true
+      geoip-code: CN
+      ipcidr:
+        - 240.0.0.0/4
+  stash:
+    name_template: 'ACL4SSR · {id}'
+    desc_template: 'Auto-generated from {ini_url} — do not edit output by hand.'
+  general:
+    mixed-port: 7890
+    allow-lan: true
+    unified-delay: true
+    tcp-concurrent: true
+    log-level: info
+
+presets:
+  acl4ssr:
+    enabled: true
+    # Expand all files from config/acl4ssr-catalog.yaml
+    catalog: true
+    # include: [ACL4SSR_Online_Full.ini]
+    # exclude: []
+
+# Explicit profiles merge over preset (same id wins).
+# profiles: []
