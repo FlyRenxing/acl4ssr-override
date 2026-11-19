@@ -2,12 +2,12 @@
   "id": "online_full_adblock_plus",
   "name": "ACL4SSR_Online_Full_AdblockPlus",
   "ini_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini",
-  "sha256": "7ce2b39f5f844df8d06e6267907ae00a3a9e042283712236890f7ec87338b027",
+  "sha256": "cf2ea8013f9bedf62c9ca4503e39b485e11aa3738e2a536c92c72f8b60d71992",
   "from_cache": false,
-  "generated_at": "2026-11-18T22:44:07.919Z",
+  "generated_at": "2026-11-19T22:47:51.855Z",
   "group_count": 33,
-  "provider_count": 35,
-  "rules_count": 37,
+  "provider_count": 34,
+  "rules_count": 36,
   "artifacts": [
     "stash/override.stoverride",
     "party/override.js"
